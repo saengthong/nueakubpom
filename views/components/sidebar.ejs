@@ -1,0 +1,63 @@
+<div class='sidebar'>
+    <div class="brandNav">
+        <img src="/img/logo.png">
+        <h3 class="textB">NueaKubPom</h3>
+    </div>
+    <ul>
+        <li>
+            <a href="/" class="navlink">
+                <span class="icon"><i class='bx bxs-home'></i></span>
+                <span class="textnav">Home</span>
+            </a>
+        </li>
+        <li>
+            <a href="/about" class="navlink">
+                <span class="icon"><i class='bx bxs-user'></i></span>
+                <span class="textnav">About</span>
+            </a>
+        </li>
+        <li>
+            <a href="/contact" class="navlink">
+                <span class="icon"><i class='bx bxs-envelope'></i></span>
+                <span class="textnav">Contact</span>
+            </a>
+        </li>
+        <li>
+            <a href="/reportBug" class="navlink">
+                <span class="icon"><i class="fa-solid fa-bug"></i></span>
+                <span class="textnav">ReportBug</span>
+            </a>
+        </li>
+        <% if (typeof user !== "undefined") {
+            %>
+            <li>
+                <a href="/setting" class="navlink">
+                    <span class="icon"><i class="fa-solid fa-gear"></i></span>
+                    <span class="textnav">Setting</span>
+                </a>
+            </li>
+            <li>
+                <a href="/logoutByWeb" class="navlink">
+                    <span class="icon"><i class='bx bx-log-out'></i></span>
+                    <span class="textnav">Logout</span>
+                </a>
+            </li>
+            <%
+        } else {
+            %>
+            <li>
+                <a href="/login" class="navlink">
+                    <span class="icon"><i class='bx bx-log-in'></i></span>
+                    <span class="textnav">Login</span>
+                </a>
+            </li>
+            <li>
+                <a href="/register" class="navlink">
+                    <span class="icon"><i class='bx bx-registered'></i></span>
+                    <span class="textnav">Register</span>
+                </a>
+            </li>
+            <%
+        } %>
+    </ul>
+</div>
